@@ -1,0 +1,124 @@
+.weather-body{
+    /* border: 2px solid red; */
+    height: 50%;
+    width: 50%;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.main-display{
+    /* border: 3px solid rgb(115, 83, 24); */
+    height: 60%;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1em;
+    margin-bottom: 1em;
+}
+
+.location{
+    /* border: 2px solid var(--border-color); */
+    width: 100%;
+    min-height: 2em;
+    height: 2em;
+    font-size: 1.5em;
+}
+
+.display-section{
+    /* border: 2px solid green; */
+    min-height: 50%; 
+    width: 100%;
+    flex-direction: row;
+    gap: 3em;
+}
+
+.weather-icon, .temperature{
+    height: 100%;
+    width: 100px;
+}
+
+/* .weather-icon{
+    border: 2px solid var(--border-color);
+} */
+
+.weather-icon img{
+    height: 150%;
+    flex-wrap: nowrap;
+}
+
+.temperature{
+    /* border: 2px solid var(--border-color); */
+    height: 100%;
+    width: 50%;
+    font-size: 5em;
+}
+
+.unit-display{
+    /* border: 2px solid var(--border-color); */
+    height: 100%;
+    min-width: 30%;
+    font-size: 0.5em;
+    justify-content: flex-start!important;
+    align-items: flex-start!important;
+}
+
+.temperature-units{
+    width: 100%;
+    gap: 0.5em;
+    margin-bottom: 2em;
+}
+
+.temperature-button{
+    /* border: 1px solid var(--border-color); */
+    border-radius: 8px;
+    width: 4em;
+    height: 2em;
+}
+
+.temperature-button:hover{
+    box-shadow: 0px 0px 10px 1px gray;
+}
+
+.temperature-button:active{
+    color: gray;
+    box-shadow: 0px 0px 10px 1px black;
+}
+
+.divider{
+    height: 1.5em;
+    border-right: 1px solid black;
+}
+
+.weather-information{
+    height: 100%;
+    width: 80%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    /* border: 2px solid var(--border-color);  */
+    gap: 0.5em;
+}
+
+@media screen and (max-width: 700px){
+    .weather-body{
+        height: 50%;
+        width: 80%;
+    }
+
+    .display-section{
+        gap: 1em;
+    }
+
+    .weather-icon, .temperature{
+        height: 70px;   
+        width: 70px;
+    }
+
+    .weather-icon img{
+        height: 100%;
+    }
+
+    .temperature{
+        font-size: 3em;
+    }
+}
